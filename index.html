@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <main class="">
+
+    <div class="traffic_header_container">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+
+    <div class="product_card">
+
+      <div class="slider-container mob-range">
+        <p class="page"><span id="pageview-amount" class="page-view1">100</span>K PAGEVIEWS </p>
+        <input type="range" class="range-slider range-1" min="0" max="200" value="16">
+        <p class="money_container">$<span class="money_amount price-1">16.00</span><small>/month</small></p>
+      </div>
+
+      <div class="slider-container pc-range">
+        <div class="pageviews">
+          <p class="page"><span id="pageview-amount"  class="page-view2">100</span>K PAGEVIEWS</p>
+          <p class="money_container">$<span class="money_amount price-2">16.00</span> <small>/month</small></p>
+        </div>
+        <input type="range" class="range-slider range-1" min="0" max="200" value="16" >
+      </div>
+
+
+    <div class="time_select_container">
+      <p>Monthly Billing</p>
+      <button class="toggle"></button>
+      <p>Yearly Billing
+        <span class="mob-discount discount_container"><small> -25% </small></span>
+        <span class="pc-discount discount_container"><small> 25% discount </small></span>
+      </p>
+    </div>
+
+    <div class="servies_container">
+      <div class="list_container">
+
+        <div class="list_item">
+          <img src="images/icon-check.svg" alt="">
+          <span>
+            Unlimited websites
+          </span>
+        </div>
+        <div class="list_item">
+          <img src="images/icon-check.svg" alt="">
+          <span>
+            100% data ownership
+          </span>
+        </div>
+        <div class="list_item">
+          <img src="images/icon-check.svg" alt="">
+          <span>
+            Email reports
+          </span>
+        </div>
+
+      </div>
+      <button class="btn">Start my trial</button>
+    </div>
+
+  </div>
+
+  </main>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
